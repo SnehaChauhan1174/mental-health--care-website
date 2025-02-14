@@ -31,6 +31,9 @@ async function main(){
 app.get("/",(req,res)=>{
     res.send("Root!!");
 })
+app.get("/landing",(req,res) => {
+    res.render("landing_page/landing_page.ejs");
+})
 
 app.get("/posts",async (req,res)=>{
    const allPost=await Post.find({});
@@ -40,3 +43,4 @@ app.get("/posts",async (req,res)=>{
 app.listen(8080,()=>{
     console.log("server is listening to port 8080");
 })
+
