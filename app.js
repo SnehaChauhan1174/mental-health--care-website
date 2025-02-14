@@ -30,6 +30,9 @@ app.use(express.static(path.join(__dirname,'/public')))
 app.get("/",(req,res)=>{
     res.send("Root!!");
 })
+app.get("/landing",(req,res) => {
+    res.render("landing_page/landing_page.ejs");
+})
 
 app.listen(8080,()=>{
     console.log("server is listening to port 8080");
