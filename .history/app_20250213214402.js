@@ -20,13 +20,13 @@ app.set("views",path.join(__dirname,"views"));
 app.use(express.urlencoded({extended:true}))
 app.use(methodOverride('_method'))
 app.engine('ejs',ejsMate)
-app.use(express.static(path.join(__dirname,'/public')))
+
 
 async function main(){
     await mongoose.connect(mongo_url);
 }
 
-
+app.use(express.static(path.join(__dirname,'/public')))
 
 app.get("/",(req,res)=>{
     res.send("Root!!");
@@ -34,7 +34,7 @@ app.get("/",(req,res)=>{
 
 app.get("/posts",async (req,res)=>{
    const allPost=await Post.find({});
-   res.render('posts/posts.ejs',{allPost});
+   res.render('index.ejs',{allPost});
 })
 
 app.listen(8080,()=>{

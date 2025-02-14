@@ -1,0 +1,9 @@
+<% layout('/layouts/boilerplate')
+<body>
+  <h3>all posts</h3>
+  <ul>
+    <% for(let posts of allPost){ %>
+      <h4><%= posts.title %></h4>
+    <% } %>
+  </ul>
+</body>
