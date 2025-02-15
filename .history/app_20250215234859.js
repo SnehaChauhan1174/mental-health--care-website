@@ -42,10 +42,8 @@ app.get("/posts",async (req,res)=>{
 
 //create new post
 app.post('/posts',async(req,res)=>{
-    
-    const newPost=new Post(req.body.posts);
-    await newPost.save();
-    res.redirect('/posts');
+    let posts=req.body.posts;
+    console.log(posts);
 })
 
 app.listen(8080,()=>{

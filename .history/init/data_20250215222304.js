@@ -14,7 +14,7 @@ const samplePost=[
         description: "Healing doesn't happen overnight, and that's okay. Every small step you take towards self-care and recovery is a step towards a better you.",
         image: {
           filename: "growth_path.jpg",
-          url: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          url: "https://media.istockphoto.com/id/1150436123/photo/bowl-buddha-balanced-healthy-vegetarian-food-top-view-aloo-gobi-tabouli-salad-chickpeas.jpg?s=1024x1024&w=is&k=20&c=xViqMto84IHpL2Ns8TV9ZJ82r93aJP3l6e3C3_b43u0="
         },
         tags: ["self-care", "growth", "mental wellness"],
         likes: 320
@@ -34,7 +34,7 @@ const samplePost=[
         description: "Speaking about your emotions is not a weakness; it’s a sign of strength. Whether with a friend, therapist, or journal—express yourself freely.",
         image: {
           filename: "talking_support.jpg",
-          url: "https://media.istockphoto.com/id/2155916027/photo/young-asian-woman-meditating-in-living-room-indoor-lifestyle-portrait-self-care-and.jpg?s=2048x2048&w=is&k=20&c=ppiyQoh5icwOnwMmekDZMDjME5nR4andWlur9cgXRyY="
+          url: "https://www.istockphoto.com/photo/journey-gm92269080-9920060?utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fnature&utm_medium=affiliate&utm_source=unsplash&utm_term=nature%3A%3Avideo-affiliates%3Aexperiment"
         },
         tags: ["mental health", "therapy", "communication"],
         likes: 280

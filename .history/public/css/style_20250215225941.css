@@ -172,19 +172,6 @@
   .cards{
      margin: 10px 20px 10px 20px;
   }
-  .card-content{
-    height:160px;
-  }
-  .username{
-     margin-left: 10px;
-  }
-
-  .create-btn{
-    display: flex;
-    justify-content: end;
-    padding-right: 18px;
-    
-  }
 
   /* Overlay background */
 .popup-overlay {
@@ -226,15 +213,6 @@
     right: 15px;
     font-size: 24px;
     cursor: pointer;
-  }
-  #showMoreBtn:hover{
-    text-decoration: underline;
-    
-  }
-  #showMoreBtn{
-    background:none;
-    border: none;
-    color: rgb(13, 142, 234);
   }
   
   

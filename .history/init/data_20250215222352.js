@@ -14,7 +14,7 @@ const samplePost=[
         description: "Healing doesn't happen overnight, and that's okay. Every small step you take towards self-care and recovery is a step towards a better you.",
         image: {
           filename: "growth_path.jpg",
-          url: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          url: "https://media.istockphoto.com/id/1150436123/photo/bowl-buddha-balanced-healthy-vegetarian-food-top-view-aloo-gobi-tabouli-salad-chickpeas.jpg?s=1024x1024&w=is&k=20&c=xViqMto84IHpL2Ns8TV9ZJ82r93aJP3l6e3C3_b43u0="
         },
         tags: ["self-care", "growth", "mental wellness"],
         likes: 320

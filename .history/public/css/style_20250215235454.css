@@ -175,16 +175,6 @@
   .card-content{
     height:160px;
   }
-  .username{
-     margin-left: 10px;
-  }
-
-  .create-btn{
-    display: flex;
-    justify-content: end;
-    padding-right: 18px;
-    
-  }
 
   /* Overlay background */
 .popup-overlay {

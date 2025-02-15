@@ -176,14 +176,7 @@
     height:160px;
   }
   .username{
-     margin-left: 10px;
-  }
-
-  .create-btn{
-    display: flex;
-    justify-content: end;
-    padding-right: 18px;
-    
+     margin-left: 5px;
   }
 
   /* Overlay background */

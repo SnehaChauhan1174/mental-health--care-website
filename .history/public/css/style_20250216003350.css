@@ -180,9 +180,8 @@
   }
 
   .create-btn{
-    display: flex;
+    display: flexbox;
     justify-content: end;
-    padding-right: 18px;
     
   }
 

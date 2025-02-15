@@ -40,12 +40,10 @@ app.get("/posts",async (req,res)=>{
    res.render('posts/posts.ejs',{allPost});
 })
 
-//create new post
+//new post
 app.post('/posts',async(req,res)=>{
-    
-    const newPost=new Post(req.body.posts);
-    await newPost.save();
-    res.redirect('/posts');
+    let post=req.body.posts;
+    console.log(post);
 })
 
 app.listen(8080,()=>{

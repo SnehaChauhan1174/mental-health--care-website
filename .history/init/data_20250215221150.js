@@ -4,7 +4,7 @@ const samplePost=[
         description: "No matter how dark the days may seem, remember that you are never alone. There are people who care about you, and brighter days are ahead. Keep going!",
         image: {
           filename: "postimage",
-          url: "https://media.istockphoto.com/id/92269080/photo/journey.jpg?s=2048x2048&w=is&k=20&c=8eh8FRUcsGYOjNxbUjl4jnuJ7lnNOQYbfWAXIJx7afw="
+          url: "https://www.istockphoto.com/photo/young-asian-woman-meditating-in-living-room-indoor-lifestyle-portrait-self-care-and-gm2155916027-576706993?utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fmeditation&utm_medium=affiliate&utm_source=unsplash&utm_term=meditation%3A%3Avideo-affiliates%3Aexperiment"
         },
         tags: ["mental health", "support", "hope"],
         likes: 250
@@ -14,7 +14,7 @@ const samplePost=[
         description: "Healing doesn't happen overnight, and that's okay. Every small step you take towards self-care and recovery is a step towards a better you.",
         image: {
           filename: "growth_path.jpg",
-          url: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          url: "https://www.istockphoto.com/photo/bowl-buddha-balanced-healthy-vegetarian-food-top-view-aloo-gobi-tabouli-salad-gm1150436123-311413189?utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fhealthy-food&utm_medium=affiliate&utm_source=unsplash&utm_term=healthy+food%3A%3Avideo-affiliates%3Aexperiment"
         },
         tags: ["self-care", "growth", "mental wellness"],
         likes: 320
@@ -24,7 +24,7 @@ const samplePost=[
         description: "Resting is not quitting. Your mind and body need moments of peace. Give yourself permission to pause and breathe.",
         image: {
           filename: "calm_nature.jpg",
-          url: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          url: "https://unsplash.com/photos/woman-exercising-indoors-lrQPTQs7nQQ"
         },
         tags: ["self-care", "relaxation", "mental health"],
         likes: 410
@@ -34,7 +34,7 @@ const samplePost=[
         description: "Speaking about your emotions is not a weakness; it’s a sign of strength. Whether with a friend, therapist, or journal—express yourself freely.",
         image: {
           filename: "talking_support.jpg",
-          url: "https://media.istockphoto.com/id/2155916027/photo/young-asian-woman-meditating-in-living-room-indoor-lifestyle-portrait-self-care-and.jpg?s=2048x2048&w=is&k=20&c=ppiyQoh5icwOnwMmekDZMDjME5nR4andWlur9cgXRyY="
+          url: "https://www.istockphoto.com/photo/journey-gm92269080-9920060?utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fnature&utm_medium=affiliate&utm_source=unsplash&utm_term=nature%3A%3Avideo-affiliates%3Aexperiment"
         },
         tags: ["mental health", "therapy", "communication"],
         likes: 280
@@ -44,7 +44,7 @@ const samplePost=[
         description: "No matter what you've been through, you are worthy of joy, love, and peace. Never let your past define your future.",
         image: {
           filename: "smiling_sunset.jpg",
-          url: "https://media.istockphoto.com/id/2152439466/photo/natural-hair-care-portrait-of-young-woman-in-exotic-tropical-foliage.jpg?s=2048x2048&w=is&k=20&c=LvDCbzUKn8kvKHT9Gjb8TxL7UONYhSPByuCzqytEhbE="
+          url: "https://www.istockphoto.com/photo/natural-hair-care-portrait-of-young-woman-in-exotic-tropical-foliage-gm2152439466-573445543?utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fhappiness&utm_medium=affiliate&utm_source=unsplash&utm_term=happiness%3A%3Avideo-affiliates%3Aexperiment"
         },
         tags: ["happiness", "self-love", "positivity"],
         likes: 500

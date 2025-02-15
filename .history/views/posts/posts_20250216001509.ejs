@@ -1,7 +1,7 @@
 <%- layout('/layouts/boilerplate') %>
 <body>
-  <div class="create-btn">
-    <button style="background-color: #d8af95;" class="btn btn-lg mt-3 " id="openPopupBtn">Create New Post</button>
+  <div>
+    <button style="background-color: #d8af95;" class="btn btn-lg mt-3" id="openPopupBtn">Create New Post</button>
     <%- include('./newPost') %>
   </div>
  
@@ -13,39 +13,37 @@
       <div class="col mb-4">
         <div class="card cards">
           <!-- Image triggers the modal -->
-          <div class="card-header d-flex align-items-center justify-content-between p-2">
-            <div class="d-flex align-items-center">
-               <!-- Circle Logo -->
-              <img src="https://i.pravatar.cc/40?img=<%= Math.floor(Math.random() * 70) %>" 
-                alt="Logo" 
-                class="rounded-circle" 
-                width="40" 
-                height="40">
-       <!-- Username -->
-              <span class="username">user__</span>
-
-            </div>
-           
-            <!-- Three-dot Dropdown -->
-            <div class="dropdown">
-                <button
-                  class="btn btn-light p-2 rounded-circle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  style="width: 40px; height: 40px;">
-                <!-- Three-dot icon (vertical) -->
-                  <i class="fas fa-ellipsis-v"></i>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end">
-                  <li><a class="dropdown-item" href="#">Edit Post</a></li>
-                  <li><a class="dropdown-item" href="#">Delete</a></li>
-                </ul>
-            </div>
+          <div class="card-header d-flex align-items-center gap-2">
+            <!-- Circle Logo -->
+            <img src="https://i.pravatar.cc/40?img=<%= Math.floor(Math.random() * 70) %>" 
+                 alt="Logo" 
+                 class="rounded-circle" 
+                 width="40" 
+                 height="40">
+            <!-- Username -->
+            <strong>user__</strong>
           </div>
-          
+
           <img src="<%= post.image.url%>" class="card-img-top post-image" alt="<%= post.title %>" 
-               data-bs-toggle="modal" data-bs-target="#postModal<%= post._id %>">
+          
+          <div
+            class="dropdown position-absolute"
+            style="top: 8px; right: 8px; opacity: 0.7;"
+          >
+            <button
+              class="btn btn-light dropdown-toggle p-2 border-0 rounded-circle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <!-- Three-dot icon (vertical ellipsis) -->
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+             <li><a class="dropdown-item" href="#">Edit</a></li>
+             <li><a class="dropdown-item" href="#">Delete</a></li>
+            </ul>
+          </div>
+               <!-- data-bs-toggle="modal" data-bs-target="#postModal<%= post._id %>"> -->
           <div class="card-body card-content">
             <h5 class="card-title"><%= post.title %></h5>
             <p class="card-text">

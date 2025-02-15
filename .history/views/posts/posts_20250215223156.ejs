@@ -1,0 +1,68 @@
+<%- layout('/layouts/boilerplate') %>
+<body>
+  <h3>All Posts</h3>
+  <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mt-3">
+    <% for(let post of allPost) { %>
+      <div class="col mb-4">
+        <div class="card">
+          <!-- Image triggers the modal -->
+          <div class="card-header d-flex align-items-center gap-2">
+            <!-- Circle Logo -->
+            <img src="https://i.pravatar.cc/40?img=<%= Math.floor(Math.random() * 70) %>" 
+                 alt="Logo" 
+                 class="rounded-circle" 
+                 width="40" 
+                 height="40">
+            <!-- Username -->
+            <strong>user__</strong>
+          </div>
+          <img src="<%= post.image.url%>" class="card-img-top post-image" alt="<%= post.title %>" 
+               data-bs-toggle="modal" data-bs-target="#postModal<%= post._id %>">
+          <div class="card-body">
+            <h5 class="card-title"><%= post.title %></h5>
+            <p class="card-text">
+              <%= post.description.substring(0, 100) %>...
+            </p>
+            <!-- Show More button also triggers the modal -->
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#postModal<%= post._id %>">
+              Show More
+            </button>
+
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+            <button class="btn btn-footer" title="Like">
+              &#128077; Likes
+            </button>
+            <button class="btn btn-footer" title="Comment">
+              &#128172; Comment
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal for full post -->
+      <div class="modal fade" id="postModal<%= post._id %>" tabindex="-1" aria-labelledby="postModalLabel<%= post.id %>" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="postModalLabel<%= post._id %>"><%= post.title %></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- You can also include the image here if needed -->
+              <img src="<%= post.imageUrl %>" class="img-fluid mb-3" alt="<%= post.title %>">
+              <p><%= post.fullContent %></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <!-- Optional: add comment functionality here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    <% } %>
+  </div>
+
+  <!-- Bootstrap JS Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>

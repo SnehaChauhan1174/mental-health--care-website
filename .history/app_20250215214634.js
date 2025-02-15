@@ -40,14 +40,6 @@ app.get("/posts",async (req,res)=>{
    res.render('posts/posts.ejs',{allPost});
 })
 
-//create new post
-app.post('/posts',async(req,res)=>{
-    
-    const newPost=new Post(req.body.posts);
-    await newPost.save();
-    res.redirect('/posts');
-})
-
 app.listen(8080,()=>{
     console.log("server is listening to port 8080");
 })
