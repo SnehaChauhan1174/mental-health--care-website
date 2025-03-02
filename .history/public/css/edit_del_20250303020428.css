@@ -1,0 +1,9 @@
+.delBtn{
+    border: none;
+    margin-left: 10px;
+    background-color: white;
+   
+}
+.delBtn:hover{
+    background-color: rgb(204, 213, 221);
+}

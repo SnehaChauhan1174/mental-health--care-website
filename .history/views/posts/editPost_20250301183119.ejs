@@ -1,0 +1,24 @@
+<div id="customPopupEdit" class="popup-overlay" style="display: none;">
+  <div class="popup-content">
+      <span id="closeEditPopupBtn" class="close-btn">&times;</span>
+      <h1>Edit Post Page</h1>
+<pre><%= JSON.stringify(posts, null, 2) %></pre>
+
+
+      <form id="editPostForm" class="p-4 border rounded" method="POST" action="">
+          <div class="mb-3">
+              <label for="editPostTitle" class="form-label">Title</label>
+              <input type="text" class="form-control" id="editPostTitle" name="posts[title]" value="">
+          </div>
+          <div class="mb-3">
+              <label for="editPostDescription" class="form-label">Description</label>
+              <textarea class="form-control" id="editPostDescription" name="posts[description]" rows="4"></textarea>
+          </div>
+          <div class="mb-3">
+              <label for="editImageUrl" class="form-label">Image URL</label>
+              <input type="url" class="form-control" id="editImageUrl" name="posts[image]" value="">
+          </div>
+          <button type="submit" class="btn btn-primary">Save</button>
+      </form>
+  </div>
+</div>

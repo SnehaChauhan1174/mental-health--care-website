@@ -38,14 +38,15 @@
                   <i class="fas fa-ellipsis-v"></i>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end">
-                  <li><a class="dropdown-item editBtn" href="/posts/<%=post._id%>/edit"
-                    
-                    >Edit Post</a></li>
+                  <li><button class="dropdown-item editBtn" 
+                    data-id="<%= post._id %>"
+                    data-title="<%= post.title %>"
+                    data-description="<%= post.description %>"
+                    data-image="<%= post.image.url %>"
+                    >Edit Post</button></li>
                     <!-- the edit button holds the post data in data-* attributes. -->
                   
-                  <li><form method="post" action="/posts/<%=post._id%>?_method=delete">
-                        <button class="delBtn">Delete</button>
-                  </form></li>
+                  <li><a class="dropdown-item" id="delBtn">Delete</a></li>
                 </ul>
             </div>
           </div>

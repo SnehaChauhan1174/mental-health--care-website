@@ -65,17 +65,8 @@ app.get('/posts/:id/edit',async(req,res)=>{
 app.put('/posts/:id',async(req,res)=>{
     const {id} = req.params;
     await Post.findByIdAndUpdate(id,{...req.body.post});//wrapping out objects for updated info
-    res.redirect(`/posts`);
+    res.redirect(`/posts/${id}`);
 })
-
-//del route
-app.delete('/posts/:id',async(req,res)=>{
-    let {id}=req.params;
-    let delPost=await Post.findByIdAndDelete(id);
-    console.log(delPost);
-    res.redirect('/posts');
-})
-
 
 app.listen(8080,()=>{
     console.log("server is listening to port 8080");

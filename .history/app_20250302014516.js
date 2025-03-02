@@ -68,15 +68,6 @@ app.put('/posts/:id',async(req,res)=>{
     res.redirect(`/posts`);
 })
 
-//del route
-app.delete('/posts/:id',async(req,res)=>{
-    let {id}=req.params;
-    let delPost=await Post.findByIdAndDelete(id);
-    console.log(delPost);
-    res.redirect('/posts');
-})
-
-
 app.listen(8080,()=>{
     console.log("server is listening to port 8080");
 })

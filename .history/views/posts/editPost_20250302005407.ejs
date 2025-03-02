@@ -1,0 +1,44 @@
+<div id="customPopup" class="popup-overlay">
+  <div class="popup-content">
+    <span id="closePopupBtn" class="close-btn">&times;</span>
+    <h2>Create a New Post</h2>
+    <form id="newPostForm" class="p-4 border rounded" method="post" action="/posts">
+      <div class="mb-3">
+        <label for="postTitle" class="form-label">Title</label>
+        <input
+          type="text"
+          class="form-control"
+          id="postTitle"
+          name="posts[title]"
+          value="<%= posts.title %>"
+          >
+      </div>
+      
+      <div class="mb-3">
+        <label for="postDescription" class="form-label">Description</label>
+        <textarea
+          class="form-control"
+          id="postDescription"
+          name="posts[description]"
+          rows="4"
+          
+          ><%= posts.description %></textarea>
+      </div>
+      
+      <div class="mb-3">
+        <label for="imageUrl" class="form-label">Image URL</label>
+        <input
+          type="url"
+          class="form-control"
+          id="imageUrl"
+          name="posts[image]"
+          placeholder="Enter image URL">
+      </div>
+      
+      <button type="submit" class="btn btn-primary">Post</button>
+    </form>
+    
+  </div>
+</div>
+
+

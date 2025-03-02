@@ -42,7 +42,10 @@ app.get("/posts",async (req,res)=>{
    res.render('posts/posts.ejs',{allPost});
 })
 
-
+// Route to render editPost.ejs
+app.get('/editPost', (req, res) => {
+    res.render('posts/editPost', { posts: { title: "Test Title", description: "Test Description" } });
+});
 
 
 //create new post
@@ -53,29 +56,12 @@ app.post('/posts',async(req,res)=>{
     res.redirect('/posts');
 })
 
-
-app.get('/posts/:id/edit',async(req,res)=>{
-    let {id}=req.params;
-    const posts=await Post.findById(id);
-    res.render('posts/editPost.ejs',{posts});
-
-})
-
 //update post
 app.put('/posts/:id',async(req,res)=>{
-    const {id} = req.params;
-    await Post.findByIdAndUpdate(id,{...req.body.post});//wrapping out objects for updated info
-    res.redirect(`/posts`);
+    const postId = req.params.id;
+    await Post.findByIdAndUpdate(postId,{...req.body});//wrapping out objects for updated info
+    res.redirect("/posts");
 })
-
-//del route
-app.delete('/posts/:id',async(req,res)=>{
-    let {id}=req.params;
-    let delPost=await Post.findByIdAndDelete(id);
-    console.log(delPost);
-    res.redirect('/posts');
-})
-
 
 app.listen(8080,()=>{
     console.log("server is listening to port 8080");

@@ -1,0 +1,46 @@
+<%- layout('/layouts/boilerplate') %>
+<body>
+  <h2>Edit post</h2>
+    <form id="editPostForm" class="p-4 border rounded" method="post" action="/posts/<%=posts._id %>?_method=put">
+      <div class="mb-3">
+        <label for="postTitle" class="form-label">Title</label>
+        <input
+          type="text"
+          class="form-control"
+          id="postTitle"
+          name="posts[title]"
+          value="<%= posts.title %>"
+          >
+      </div>
+      
+      <div class="mb-3">
+        <label for="postDescription" class="form-label">Description</label>
+        <textarea
+          class="form-control"
+          id="postDescription"
+          name="posts[description]"
+          rows="4"
+          
+          ><%= posts.description %></textarea>
+      </div>
+      
+      <div class="mb-3">
+        <label for="imageUrl" class="form-label">Image URL</label>
+        <input
+          type="url"
+          class="form-control"
+          id="imageUrl"
+          name="posts[image]"
+          value='<%= posts.image.url %>'>
+      </div>
+      
+      <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+    
+ 
+  
+</body>
+
+    
+
+
